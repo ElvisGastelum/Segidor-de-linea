@@ -1,4 +1,4 @@
-int s1=A0, s2=A1, s3=A2, s4=A3;
+int s1=A4, s2=A5, s3=A6, s4=A7;
 void setup() {
   pinMode(11, OUTPUT);
   pinMode(8, OUTPUT);
@@ -10,10 +10,10 @@ void setup() {
 }
 
 void loop() { 
-  int sen1=digitalRead(s1);
-  int sen2=digitalRead(s2);
-  int sen3=digitalRead(s3);
-  int sen4=digitalRead(s4);
+  int sen1=analogRead(s1);
+  int sen2=analogRead(s2);
+  int sen3=analogRead(s3);
+  int sen4=analogRead(s4);
 
   int md1=11, mi1=8, md2=3, mi2=2;
   Serial.print(sen1);
@@ -23,6 +23,8 @@ void loop() {
   Serial.print(sen3);
   Serial.print(" - ");
   Serial.print(sen4);
+  Serial.print("\n");
+  
 
   
   
